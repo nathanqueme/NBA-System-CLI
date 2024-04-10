@@ -46,7 +46,7 @@ class Team:
     def update_player(self):
         pass
     
-    def delete_player():
+    def delete_player(self):
         pass
     
     

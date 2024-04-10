@@ -3,7 +3,7 @@ from Game import Game
 from Record import Record
 from Utils import Utils
 
-class Session:
+class Season:
     def __init__(
         self,
         schedule: list[Game],

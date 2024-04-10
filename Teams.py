@@ -39,22 +39,22 @@ class Teams:
         )
         return input("Enter a choice: ")
     
-    def display_teams():
+    def display_teams(self):
         pass
     
-    def display_players():
+    def display_players(self):
         pass
     
-    def add_team():
+    def add_team(self):
         pass
     
-    def manage_team():
+    def manage_team(self):
         pass
     
-    def delete_team():
+    def delete_team(self):
         pass
     
-    def display_players_by_level():
+    def display_players_by_level(self):
         pass
     
     
