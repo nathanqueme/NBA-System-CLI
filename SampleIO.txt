@@ -1,0 +1,554 @@
+Welcome to the Association! Please make a selection from the menu:
+1. Explore the teams.
+2. Arrange a new season.
+X. Exit the system.
+Enter a choice: 1
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 1
++----------------------+---------------------+-----------------------+--------------+
+| Team Name            | Number of Players   | Average Player Credit | Average Age  |
++----------------------+---------------------+-----------------------+--------------+
+| Suns                 | 5                   | 2000.00               | 30.60        |
+| Bulls                | 5                   | 1440.00               | 25.00        |
+| Hawks                | 5                   | 1440.00               | 24.00        |
+| Nets                 | 5                   | 1680.00               | 29.80        |
++----------------------+---------------------+-----------------------+--------------+
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 2
++----------------------+----------------+--------------+-------+-------+-----------+
+| Player Name          | Credit         | Level        | Age   | No    | Team      |
++----------------------+----------------+--------------+-------+-------+-----------+
+| Devin Booker         | 2500.00        | All Star     | 26    | 1     | Suns      |
+| Chris Paul           | 1500.00        | Core         | 37    | 3     | Suns      |
+| Deandre Ayton        | 2000.00        | All Star     | 24    | 22    | Suns      |
+| Kevin Durant         | 3000.00        | All Star     | 34    | 35    | Suns      |
+| Terrence Ross        | 1000.00        | Common       | 32    | 8     | Suns      |
++----------------------+----------------+--------------+-------+-------+-----------+
+| Andre Drummond       | 1500.00        | Core         | 29    | 3     | Bulls     |
+| Zach LaVine          | 3000.00        | All Star     | 28    | 8     | Bulls     |
+| Dalen Terry          | 900.00         | Edge         | 20    | 25    | Bulls     |
+| Terry Taylor         | 1000.00        | Common       | 23    | 32    | Bulls     |
+| Carlik Jones         | 800.00         | Edge         | 25    | 22    | Bulls     |
++----------------------+----------------+--------------+-------+-------+-----------+
+| Trae Young           | 2200.00        | All Star     | 24    | 11    | Hawks     |
+| John Collins         | 2000.00        | All Star     | 25    | 20    | Hawks     |
+| Aaron Holiday        | 800.00         | Edge         | 26    | 3     | Hawks     |
+| Jalen Johnson        | 1000.00        | Common       | 21    | 1     | Hawks     |
+| Trent Forrest        | 1200.00        | Common       | 24    | 2     | Hawks     |
++----------------------+----------------+--------------+-------+-------+-----------+
+| Mikal Bridges        | 2400.00        | All Star     | 26    | 1     | Nets      |
+| Ben Simmons          | 2000.00        | All Star     | 26    | 10    | Nets      |
+| Patty Mills          | 900.00         | Edge         | 34    | 8     | Nets      |
+| Joe Harris           | 1200.00        | Common       | 31    | 12    | Nets      |
+| Seth Curry           | 1900.00        | Core         | 32    | 30    | Nets      |
++----------------------+----------------+--------------+-------+-------+-----------+
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 3
+Please enter the name of the team: Suns
+Team Suns already exist! Please enter a new name: Heats
+Team Heats added!
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 1
++----------------------+---------------------+-----------------------+--------------+
+| Team Name            | Number of Players   | Average Player Credit | Average Age  |
++----------------------+---------------------+-----------------------+--------------+
+| Suns                 | 5                   | 2000.00               | 30.60        |
+| Bulls                | 5                   | 1440.00               | 25.00        |
+| Hawks                | 5                   | 1440.00               | 24.00        |
+| Nets                 | 5                   | 1680.00               | 29.80        |
+| Heats                | 0                   | 0.00                  | 0.00         |
++----------------------+---------------------+-----------------------+--------------+
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 4
+Please enter the team's name that you want to manage: UTS
+Team does not exist!
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 4
+Please enter the team's name that you want to manage: Suns
+Welcome to the Suns 's Page! Please make a selection from the menu:
+1. Display team's players.
+2. Add a new player.
+3. Update an existing player.
+4. Delete an existing player.
+R. Return to previous menu.
+Enter a choice: 1
++----------------------+----------------+--------------+-------+-------+
+| Player Name          | Credit         | Level        | No    | Age   |
++----------------------+----------------+--------------+-------+-------+
+| Devin Booker         | 2500.00        | All Star     | 1     | 26    |
+| Chris Paul           | 1500.00        | Core         | 3     | 37    |
+| Deandre Ayton        | 2000.00        | All Star     | 22    | 24    |
+| Kevin Durant         | 3000.00        | All Star     | 35    | 34    |
+| Terrence Ross        | 1000.00        | Common       | 8     | 32    |
++----------------------+----------------+--------------+-------+-------+
+Welcome to the Suns 's Page! Please make a selection from the menu:
+1. Display team's players.
+2. Add a new player.
+3. Update an existing player.
+4. Delete an existing player.
+R. Return to previous menu.
+Enter a choice: 2
+Please enter the player's name: UTS
+Please enter the player's credit: 1500
+Please enter the player's age: 20
+Please enter the player's No: 8
+This No has been occupied by: Terrence Ross. Please re-enter the No: 35
+This No has been occupied by: Kevin Durant. Please re-enter the No: 1
+This No has been occupied by: Devin Booker. Please re-enter the No: 66
+Player UTS added!
+Welcome to the Suns 's Page! Please make a selection from the menu:
+1. Display team's players.
+2. Add a new player.
+3. Update an existing player.
+4. Delete an existing player.
+R. Return to previous menu.
+Enter a choice: 1
++----------------------+----------------+--------------+-------+-------+
+| Player Name          | Credit         | Level        | No    | Age   |
++----------------------+----------------+--------------+-------+-------+
+| Devin Booker         | 2500.00        | All Star     | 1     | 26    |
+| Chris Paul           | 1500.00        | Core         | 3     | 37    |
+| Deandre Ayton        | 2000.00        | All Star     | 22    | 24    |
+| Kevin Durant         | 3000.00        | All Star     | 35    | 34    |
+| Terrence Ross        | 1000.00        | Common       | 8     | 32    |
+| UTS                  | 1500.00        | Core         | 66    | 20    |
++----------------------+----------------+--------------+-------+-------+
+Welcome to the Suns 's Page! Please make a selection from the menu:
+1. Display team's players.
+2. Add a new player.
+3. Update an existing player.
+4. Delete an existing player.
+R. Return to previous menu.
+Enter a choice: 3
+Please enter the player's name: UTS
+Please enter the name: HiUTS
+Please enter the credit: 2000
+Please enter the age: 29
+Please enter the No: 8
+This No has been occupied by: Terrence Ross. Please re-enter the No: 22
+This No has been occupied by: Deandre Ayton. Please re-enter the No: 88
+Player information updated.
+Welcome to the Suns 's Page! Please make a selection from the menu:
+1. Display team's players.
+2. Add a new player.
+3. Update an existing player.
+4. Delete an existing player.
+R. Return to previous menu.
+Enter a choice: 1
++----------------------+----------------+--------------+-------+-------+
+| Player Name          | Credit         | Level        | No    | Age   |
++----------------------+----------------+--------------+-------+-------+
+| Devin Booker         | 2500.00        | All Star     | 1     | 26    |
+| Chris Paul           | 1500.00        | Core         | 3     | 37    |
+| Deandre Ayton        | 2000.00        | All Star     | 22    | 24    |
+| Kevin Durant         | 3000.00        | All Star     | 35    | 34    |
+| Terrence Ross        | 1000.00        | Common       | 8     | 32    |
+| HiUTS                | 2000.00        | All Star     | 88    | 29    |
++----------------------+----------------+--------------+-------+-------+
+Welcome to the Suns 's Page! Please make a selection from the menu:
+1. Display team's players.
+2. Add a new player.
+3. Update an existing player.
+4. Delete an existing player.
+R. Return to previous menu.
+Enter a choice: 4
+Please enter the player's name: UTS
+Player does not exist.
+Welcome to the Suns 's Page! Please make a selection from the menu:
+1. Display team's players.
+2. Add a new player.
+3. Update an existing player.
+4. Delete an existing player.
+R. Return to previous menu.
+Enter a choice: 4
+Please enter the player's name: HiUTS
+Player deleted.
+Welcome to the Suns 's Page! Please make a selection from the menu:
+1. Display team's players.
+2. Add a new player.
+3. Update an existing player.
+4. Delete an existing player.
+R. Return to previous menu.
+Enter a choice: 1
++----------------------+----------------+--------------+-------+-------+
+| Player Name          | Credit         | Level        | No    | Age   |
++----------------------+----------------+--------------+-------+-------+
+| Devin Booker         | 2500.00        | All Star     | 1     | 26    |
+| Chris Paul           | 1500.00        | Core         | 3     | 37    |
+| Deandre Ayton        | 2000.00        | All Star     | 22    | 24    |
+| Kevin Durant         | 3000.00        | All Star     | 35    | 34    |
+| Terrence Ross        | 1000.00        | Common       | 8     | 32    |
++----------------------+----------------+--------------+-------+-------+
+Welcome to the Suns 's Page! Please make a selection from the menu:
+1. Display team's players.
+2. Add a new player.
+3. Update an existing player.
+4. Delete an existing player.
+R. Return to previous menu.
+Enter a choice: R
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 1
++----------------------+---------------------+-----------------------+--------------+
+| Team Name            | Number of Players   | Average Player Credit | Average Age  |
++----------------------+---------------------+-----------------------+--------------+
+| Suns                 | 5                   | 2000.00               | 30.60        |
+| Bulls                | 5                   | 1440.00               | 25.00        |
+| Hawks                | 5                   | 1440.00               | 24.00        |
+| Nets                 | 5                   | 1680.00               | 29.80        |
+| Heats                | 0                   | 0.00                  | 0.00         |
++----------------------+---------------------+-----------------------+--------------+
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 5
+Please enter the team's name that you want to delete: UTS
+The team you want to delete does not exist!
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 4
+Please enter the team's name that you want to manage: Heats
+Welcome to the Heats 's Page! Please make a selection from the menu:
+1. Display team's players.
+2. Add a new player.
+3. Update an existing player.
+4. Delete an existing player.
+R. Return to previous menu.
+Enter a choice: R
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 5
+Please enter the team's name that you want to delete: Heats
+The team Heats has been deleted.
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 1
++----------------------+---------------------+-----------------------+--------------+
+| Team Name            | Number of Players   | Average Player Credit | Average Age  |
++----------------------+---------------------+-----------------------+--------------+
+| Suns                 | 5                   | 2000.00               | 30.60        |
+| Bulls                | 5                   | 1440.00               | 25.00        |
+| Hawks                | 5                   | 1440.00               | 24.00        |
+| Nets                 | 5                   | 1680.00               | 29.80        |
++----------------------+---------------------+-----------------------+--------------+
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 5
+Please enter the team's name that you want to delete: Heats
+The team you want to delete does not exist!
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 6
+Please enter the player's level that you want to view: UTS
+No such level! Please re-enter the level: Core
++----------------------+----------------+--------------+-------+-------+-----------+
+| Player Name          | Credit         | Level        | Age   | No    | Team      |
++----------------------+----------------+--------------+-------+-------+-----------+
+| Chris Paul           | 1500.00        | Core         | 37    | 3     | Suns      |
+| Andre Drummond       | 1500.00        | Core         | 29    | 3     | Bulls     |
+| Seth Curry           | 1900.00        | Core         | 32    | 30    | Nets      |
++----------------------+----------------+--------------+-------+-------+-----------+
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: R
+Welcome to the Association! Please make a selection from the menu:
+1. Explore the teams.
+2. Arrange a new season.
+X. Exit the system.
+Enter a choice: 2
+Welcome to the season page! Please make a selection from the menu:
+1. Add a team to the round.
+2. Display the current round.
+3. Play games.
+4. Display the game result records.
+R. Return to previous menu.
+Enter a choice: 3
+No game in the current round, please add teams to the round first!
+Welcome to the season page! Please make a selection from the menu:
+1. Add a team to the round.
+2. Display the current round.
+3. Play games.
+4. Display the game result records.
+R. Return to previous menu.
+Enter a choice: 1
+The existing teams are as follows: 
+Suns Bulls Hawks Nets
+Please enter the team's name that you want to schedule: 
+Suns
+Team Suns has been added at the Game 1 position 1
+The existing teams are as follows: 
+Bulls Hawks Nets
+Please enter the team's name that you want to schedule: 
+Bulls
+Team Bulls has been added at the Game 1 position 2
+The existing teams are as follows: 
+Hawks Nets
+Please enter the team's name that you want to schedule: 
+Hawks
+Team Hawks has been added at the Game 2 position 1
+The existing teams are as follows: 
+Nets
+Please enter the team's name that you want to schedule: 
+Heats
+No such team! Please try again
+The existing teams are as follows: 
+Nets
+Please enter the team's name that you want to schedule: 
+Nets
+Team Nets has been added at the Game 2 position 2
+Welcome to the season page! Please make a selection from the menu:
+1. Add a team to the round.
+2. Display the current round.
+3. Play games.
+4. Display the game result records.
+R. Return to previous menu.
+Enter a choice: 2
++-------------------+------+-------------------+
+| First Team        |      | Second Team       |
++-------------------+------+-------------------+
+| Suns              |  vs  | Bulls             |
+| Hawks             |  vs  | Nets              |
++-------------------+------+-------------------+
+Welcome to the season page! Please make a selection from the menu:
+1. Add a team to the round.
+2. Display the current round.
+3. Play games.
+4. Display the game result records.
+R. Return to previous menu.
+Enter a choice: 3
+All games finished! You can use 4 to check the results.
+Welcome to the season page! Please make a selection from the menu:
+1. Add a team to the round.
+2. Display the current round.
+3. Play games.
+4. Display the game result records.
+R. Return to previous menu.
+Enter a choice: 4
++-------+------+--------------+--------------+
+| Round | Game | Winning Team | Losing team  |
++-------+------+--------------+--------------+
+| 1     | 1    | Suns         | Bulls        |
+| 1     | 2    | Nets         | Hawks        |
++-------+------+--------------+--------------+
+Welcome to the season page! Please make a selection from the menu:
+1. Add a team to the round.
+2. Display the current round.
+3. Play games.
+4. Display the game result records.
+R. Return to previous menu.
+Enter a choice: 1
+The existing teams are as follows: 
+Suns Nets
+Please enter the team's name that you want to schedule: 
+Suns
+Team Suns has been added at the Game 1 position 1
+The existing teams are as follows: 
+Nets
+Please enter the team's name that you want to schedule: 
+Nets
+Team Nets has been added at the Game 1 position 2
+Welcome to the season page! Please make a selection from the menu:
+1. Add a team to the round.
+2. Display the current round.
+3. Play games.
+4. Display the game result records.
+R. Return to previous menu.
+Enter a choice: 2
++-------------------+------+-------------------+
+| First Team        |      | Second Team       |
++-------------------+------+-------------------+
+| Suns              |  vs  | Nets              |
++-------------------+------+-------------------+
+Welcome to the season page! Please make a selection from the menu:
+1. Add a team to the round.
+2. Display the current round.
+3. Play games.
+4. Display the game result records.
+R. Return to previous menu.
+Enter a choice: 3
+All games finished! You can use 4 to check the results.
+This season ends!
+Suns is the Champion!!
+Welcome to the season page! Please make a selection from the menu:
+1. Add a team to the round.
+2. Display the current round.
+3. Play games.
+4. Display the game result records.
+R. Return to previous menu.
+Enter a choice: 4
++-------+------+--------------+--------------+
+| Round | Game | Winning Team | Losing team  |
++-------+------+--------------+--------------+
+| 1     | 1    | Suns         | Bulls        |
+| 1     | 2    | Nets         | Hawks        |
+| 2     | 1    | Suns         | Nets         |
++-------+------+--------------+--------------+
+Welcome to the season page! Please make a selection from the menu:
+1. Add a team to the round.
+2. Display the current round.
+3. Play games.
+4. Display the game result records.
+R. Return to previous menu.
+Enter a choice: R
+Welcome to the Association! Please make a selection from the menu:
+1. Explore the teams.
+2. Arrange a new season.
+X. Exit the system.
+Enter a choice: 1
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 1
++----------------------+---------------------+-----------------------+--------------+
+| Team Name            | Number of Players   | Average Player Credit | Average Age  |
++----------------------+---------------------+-----------------------+--------------+
+| Suns                 | 5                   | 2188.80               | 30.60        |
+| Bulls                | 5                   | 1328.00               | 25.00        |
+| Hawks                | 5                   | 1392.00               | 24.00        |
+| Nets                 | 5                   | 1651.20               | 29.80        |
++----------------------+---------------------+-----------------------+--------------+
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: 2
++----------------------+----------------+--------------+-------+-------+-----------+
+| Player Name          | Credit         | Level        | Age   | No    | Team      |
++----------------------+----------------+--------------+-------+-------+-----------+
+| Devin Booker         | 2688.80        | All Star     | 26    | 1     | Suns      |
+| Chris Paul           | 1688.80        | Core         | 37    | 3     | Suns      |
+| Deandre Ayton        | 2188.80        | All Star     | 24    | 22    | Suns      |
+| Kevin Durant         | 3188.80        | All Star     | 34    | 35    | Suns      |
+| Terrence Ross        | 1188.80        | Common       | 32    | 8     | Suns      |
++----------------------+----------------+--------------+-------+-------+-----------+
+| Andre Drummond       | 1388.00        | Core         | 29    | 3     | Bulls     |
+| Zach LaVine          | 2888.00        | All Star     | 28    | 8     | Bulls     |
+| Dalen Terry          | 788.00         | Edge         | 20    | 25    | Bulls     |
+| Terry Taylor         | 888.00         | Common       | 23    | 32    | Bulls     |
+| Carlik Jones         | 688.00         | Edge         | 25    | 22    | Bulls     |
++----------------------+----------------+--------------+-------+-------+-----------+
+| Trae Young           | 2152.00        | All Star     | 24    | 11    | Hawks     |
+| John Collins         | 1952.00        | All Star     | 25    | 20    | Hawks     |
+| Aaron Holiday        | 752.00         | Edge         | 26    | 3     | Hawks     |
+| Jalen Johnson        | 952.00         | Common       | 21    | 1     | Hawks     |
+| Trent Forrest        | 1152.00        | Common       | 24    | 2     | Hawks     |
++----------------------+----------------+--------------+-------+-------+-----------+
+| Mikal Bridges        | 2371.20        | All Star     | 26    | 1     | Nets      |
+| Ben Simmons          | 1971.20        | All Star     | 26    | 10    | Nets      |
+| Patty Mills          | 871.20         | Edge         | 34    | 8     | Nets      |
+| Joe Harris           | 1171.20        | Common       | 31    | 12    | Nets      |
+| Seth Curry           | 1871.20        | Core         | 32    | 30    | Nets      |
++----------------------+----------------+--------------+-------+-------+-----------+
+Welcome to the Teams Page! Please make a selection from the menu:
+1. Display all teams.
+2. Display all players.
+3. Add a new team.
+4. Manage an existing team.
+5. Delete an existing team.
+6. Display all players by an level.
+R. Return to previous menu.
+Enter a choice: R
+Welcome to the Association! Please make a selection from the menu:
+1. Explore the teams.
+2. Arrange a new season.
+X. Exit the system.
+Enter a choice: X
+Done
