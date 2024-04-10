@@ -84,12 +84,40 @@ class Teams:
         self.teams.append(Team(team_name, Players([])))
     
     def manage_team(self):
-        pass
+        team_name = input("Please enter the team's name that you want to manage: ").strip()
+        if team_name not in [team.name for team in self.teams]:
+            print("Team does not exist!")
+            return
+        team = [team for team in self.teams if team.name == team_name][0]
+        team.run()
     
     def delete_team(self):
-        pass
+        team_name = input("Please enter the team's name that you want to delete: ").strip()
+        team_name = [team.name for team in self.teams]
+        if team_name in team_name:
+            self.teams.pop(team_name.index(team_name))
+            print("Team deleted.")
+        else:
+            print(f"The team {team_name} has been deleted.")
     
     def display_players_by_level(self):
-        pass
+        levels = ["Edge", "Common", "Core", "All Star"]
+        level = input("Please enter the player's level that you want to view: ")  
+        while level not in levels:
+            level = input("No such level! Please re-enter the level: ")
+        Utils.DisplayPlayerFromAllTeamsHeader()
+        for team in self.teams:
+            for player in team.players.get_players():
+                if player.level == level:
+                    print(Utils.DisplayPlayerFromAllTeamsFormat(
+                        player.name,
+                        player.credit,
+                        player.level,
+                        player.number,
+                        player.age,
+                        player.team
+                    ))
+        Utils.DisplayPlayerFromAllTeamsEnd()
+        
     
     

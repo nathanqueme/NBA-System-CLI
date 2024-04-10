@@ -1,3 +1,4 @@
+from Player import Player
 from Players import Players
 from Utils import Utils
 
@@ -38,16 +39,53 @@ class Team:
         return input("Enter a choice: ")
     
     def display_players(self):
-        pass
+        Utils.playerHeader()
+        for player in self.players.get_players():
+            print(Utils.PlayerFormat(
+                name=player.name,
+                credit=player.credit,
+                level=player.level,
+                No=player.number,
+                age=player.age
+            ))
+        Utils.playerTableEnd()
     
     def add_player(self):
-        pass
-    
+        name = input("Please enter the player's name: ").strip()
+        credit = float(input( "Please enter the player's credit: ").strip())
+        age = int(input("Please enter the player's age: ").strip())
+        number = int(input("Please enter the player's No: ").strip())
+        while number in [player.number for player in self.players.get_players()]:
+            match = [player for player in self.players.get_players() if player.number == number][0]
+            print(f"This No has been occupied by: {match.name}. Please re-enter the No: {number}")
+            number = int(input("Please enter the player's No: ").strip())
+        self.players.players.append(Player(name, credit, age, self.name, number))
+        print(f"Player {name} added!")
+
     def update_player(self):
-        pass
+        original_name = input("Please enter the player's name: ").strip()
+        name = input("Please enter the new name: ").strip()
+        credit = float(input( "Please enter the credit: ").strip())
+        age = int(input("Please enter the age: ").strip())
+        number = int(input("Please enter the No: ").strip())
+        while number in [player.number for player in self.players.get_players()]:
+            match = [player for player in self.players.get_players() if player.number == number][0]
+            print(f"This No has been occupied by: {match.name}. Please re-enter the No: {number}")
+            number = int(input("Please enter the player's No: ").strip())
+        if original_name in [player.name for player in self.players.get_players()]:
+            idx = [player.name for player in self.players.get_players()].index(original_name)
+            self.players.players.pop(idx)
+            self.players.players.append(Player(name, credit, age, self.name, number))
+            print("Player information updated.")
     
     def delete_player(self):
-        pass
+        name = input("Please enter the player's name: ")
+        names = [player.name for player in self.players.get_players()]
+        if name in names:
+            self.players.players.pop(names.index(name))
+            print("Player deleted.")
+        else:
+            print("Player does not exist.")
     
     def get_number_of_players(self):
         return len(self.players.get_players())
