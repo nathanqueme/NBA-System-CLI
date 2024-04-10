@@ -54,9 +54,13 @@ class Team:
     
     def get_avg_player_credit(self):
         players_arr = self.players.get_players()
+        if players_arr == []:
+            return 0
         return sum(player.credit for player in players_arr) / len(players_arr)
     
     def get_avg_age(self):
         players_arr = self.players.get_players()
+        if players_arr == []:
+            return 0
         return sum(player.age for player in players_arr) / len(players_arr)
     

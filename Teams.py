@@ -1,3 +1,4 @@
+from Players import Players
 from Team import Team
 from Utils import Utils
 
@@ -76,7 +77,11 @@ class Teams:
             Utils.DisplayPlayerFromAllTeamsEnd()
     
     def add_team(self):
-        pass
+        team_name = input("Please enter the name of the team: ").strip()
+        while team_name in [team.name for team in self.teams]:
+            team_name = input(f"Team {team_name} already exists! Please enter a new name: ")
+        print(f"Team {team_name} added!")
+        self.teams.append(Team(team_name, Players([])))
     
     def manage_team(self):
         pass
