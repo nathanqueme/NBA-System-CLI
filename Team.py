@@ -49,4 +49,14 @@ class Team:
     def delete_player(self):
         pass
     
+    def get_number_of_players(self):
+        return len(self.players.get_players())
+    
+    def get_avg_player_credit(self):
+        players_arr = self.players.get_players()
+        return sum(player.credit for player in players_arr) / len(players_arr)
+    
+    def get_avg_age(self):
+        players_arr = self.players.get_players()
+        return sum(player.age for player in players_arr) / len(players_arr)
     

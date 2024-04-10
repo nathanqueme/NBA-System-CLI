@@ -5,7 +5,11 @@ class Utils:
         return "| %-*s | %-*s | %-*s | %-*s |" %(20,name,19,numofplayer,21,"{:.2f}".format(avgcredit),12,"{:.2f}".format(avgage))
 
     def DisplayPlayerFromAllTeamsFormat(name,credit,level,No,age,team):
-        return "| %-*s | %-*s | %-*s | %-*s | %-*s | %-*s |" % (20,name,14,"{:.2f}".format(credit),12,level,5,No,5,age,9,team)
+        # This line add an error - ERROR FROM UTS's SIDE (SOURCE CODE)
+        # print(f"Age: {age}")
+        # print(f"NO: {No}")
+        # The "age" and the "No" where swiped
+        return "| %-*s | %-*s | %-*s | %-*s | %-*s | %-*s |" % (20,name,14,"{:.2f}".format(credit),12,level,5,age,5,No,9,team)
     def GamesFormat(first,option,second):
         return     "| %-*s | %-*s | %-*s |" %(17,first,4,option,17,second)
    

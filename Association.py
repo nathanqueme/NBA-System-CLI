@@ -34,33 +34,65 @@ class Association:
 
 
 if __name__ == "__main__":
+
+
+# | Player Name          | Credit         | Level        | Age   | No    | Team      |
+# +----------------------+----------------+--------------+-------+-------+-----------+
+# | Devin Booker         | 2500.00        | All Star     | 26    | 1     | Suns      |
+# | Chris Paul           | 1500.00        | Core         | 37    | 3     | Suns      |
+# | Deandre Ayton        | 2000.00        | All Star     | 24    | 22    | Suns      |
+# | Kevin Durant         | 3000.00        | All Star     | 34    | 35    | Suns      |
+# | Terrence Ross        | 1000.00        | Common       | 32    | 8     | Suns      |
     suns_players = [
-        Player("Chris Paul", 2000.00, 2, 30, "Suns", 1),
-        Player("Devin Booker", 2000.00, 3, 30, "Suns", 2),
-        Player("Mikal Bridges", 2000.00, 2, 30, "Suns", 3),
-        Player("Jae Crowder", 2000.00, 4, 30, "Suns", 4),
-        Player("Deandre Ayton", 2000.00, 2, 30, "Suns", 5)
+        Player("Devin Booker", 2500.00, 26, "Suns", 1),
+        Player("Chris Paul", 1500.00, 37, "Suns", 3),
+        Player("Deandre Ayton", 2000.00, 24, "Suns", 22),
+        Player("Kevin Durant", 3000.00, 34, "Suns", 35),
+        Player("Terrence Ross", 1000.00, 32, "Suns", 8)
     ]
-    bulls_players = [
-        Player("Zach Lavine", 1440.00, 2, 25, "Bulls", 1),
-        Player("Nikola Vucevic", 1440.00, 3, 25, "Bulls", 2),
-        Player("Patrick Williams", 1440.00, 2, 25, "Bulls", 3),
-        Player("Thaddeus Young", 1440.00, 4, 25, "Bulls", 4),
-        Player("Tomas Satoransky", 1440.00, 2, 25, "Bulls", 5)
+    
+# | Player Name          | Credit         | Level        | Age   | No    | Team      |
+# +----------------------+----------------+--------------+-------+-------+-----------+
+# | Andre Drummond       | 1500.00        | Core         | 29    | 3     | Bulls     |
+# | Zach LaVine          | 3000.00        | All Star     | 28    | 8     | Bulls     |
+# | Dalen Terry          | 900.00         | Edge         | 20    | 25    | Bulls     |
+# | Terry Taylor         | 1000.00        | Common       | 23    | 32    | Bulls     |
+# | Carlik Jones         | 800.00         | Edge         | 25    | 22    | Bulls     |
+    bulls_players = [ 
+        Player("Andre Drummond", 1500.00, 29, "Bulls", 3),
+        Player("Zach LaVine", 3000.00, 28, "Bulls", 8),
+        Player("Dalen Terry", 900.00, 20, "Bulls", 25),
+        Player("Terry Taylor", 1000.00, 23, "Bulls", 32),
+        Player("Carlik Jones", 800.00, 25, "Bulls", 22)
     ]
+    
+# | Player Name          | Credit         | Level        | Age   | No    | Team      |
+# +----------------------+----------------+--------------+-------+-------+-----------+
+# | Trae Young           | 2200.00        | All Star     | 24    | 11    | Hawks     |
+# | John Collins         | 2000.00        | All Star     | 25    | 20    | Hawks     |
+# | Aaron Holiday        | 800.00         | Edge         | 26    | 3     | Hawks     |
+# | Jalen Johnson        | 1000.00        | Common       | 21    | 1     | Hawks     |
+# | Trent Forrest        | 1200.00        | Common       | 24    | 2     | Hawks     |
     hawks_players = [
-        Player("Zach Lavine", 1440.00, 2, 24, "Bulls", 1),
-        Player("Nikola Vucevic", 1440.00, 3, 24, "Bulls", 2),
-        Player("Patrick Williams", 1440.00, 2, 24, "Bulls", 3),
-        Player("Thaddeus Young", 1440.00, 4, 24, "Bulls", 4),
-        Player("Tomas Satoransky", 1440.00, 2, 24, "Bulls", 5)
+        Player("Trae Young", 2200.00, 24, "Hawks", 11),
+        Player("John Collins", 2000.00, 25, "Hawks", 20),
+        Player("Aaron Holiday", 800.00, 26, "Hawks", 3),
+        Player("Jalen Johnson", 1000.00, 21, "Hawks", 1),
+        Player("Trent Forrest", 1200.00, 24, "Hawks", 2)
     ]
+# | Player Name          | Credit         | Level        | Age   | No    | Team      |
+# +----------------------+----------------+--------------+-------+-------+-----------+
+# | Mikal Bridges        | 2400.00        | All Star     | 26    | 1     | Nets      |
+# | Ben Simmons          | 2000.00        | All Star     | 26    | 10    | Nets      |
+# | Patty Mills          | 900.00         | Edge         | 34    | 8     | Nets      |
+# | Joe Harris           | 1200.00        | Common       | 31    | 12    | Nets      |
+# | Seth Curry           | 1900.00        | Core         | 32    | 30    | Nets      |
     nets_players = [
-        Player("Zach Lavine", 1680.00, 2, 29, "Bulls", 1),
-        Player("Nikola Vucevic", 1680.00, 3, 29, "Bulls", 2),
-        Player("Patrick Williams", 1680.00, 2, 29, "Bulls", 3),
-        Player("Thaddeus Young", 1680.00, 4, 29, "Bulls", 4),
-        Player("Tomas Satoransky", 1680.00, 2, 29, "Bulls", 5)
+        Player("Mikal Bridges", 2400.00, 26, "Nets", 1),
+        Player("Ben Simmons", 2000.00, 26, "Nets", 10),
+        Player("Patty Mills", 900.00, 34, "Nets", 8),
+        Player("Joe Harris", 1200.00, 31, "Nets", 12),
+        Player("Seth Curry", 1900.00, 32, "Nets", 30)
     ]
     teams = Teams([
         Team("Suns", Players(suns_players)),
