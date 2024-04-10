@@ -3,8 +3,11 @@ from Team import Team
 from Utils import Utils
 
 class Teams:
-    def __init__(self, teams: list[Team]):
-        self.teams = teams
+    def __init__(self):
+        self.teams: list[Team] = []
+        
+    def add_team(self, team: Team):
+        self.teams.append(team)
         
     def run(self):
         option = ''
@@ -18,7 +21,7 @@ class Teams:
         elif choice == "2":
             self.display_players()
         elif choice == "3":
-            self.add_team()
+            self.add_new_team()
         elif choice == "4":
             self.manage_team()
         elif choice == "5":
@@ -76,7 +79,7 @@ class Teams:
                 ))
             Utils.DisplayPlayerFromAllTeamsEnd()
     
-    def add_team(self):
+    def add_new_team(self):
         team_name = input("Please enter the name of the team: ").strip()
         while team_name in [team.name for team in self.teams]:
             team_name = input(f"Team {team_name} already exists! Please enter a new name: ")
@@ -93,9 +96,9 @@ class Teams:
     
     def delete_team(self):
         team_name = input("Please enter the team's name that you want to delete: ").strip()
-        team_name = [team.name for team in self.teams]
-        if team_name in team_name:
-            self.teams.pop(team_name.index(team_name))
+        team_names = [team.name for team in self.teams]
+        if team_name in team_names:
+            self.teams.pop(team_names.index(team_name))
             print("Team deleted.")
         else:
             print(f"The team {team_name} has been deleted.")
