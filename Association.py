@@ -56,7 +56,7 @@ class Association:
     
     def run(self):
         option = ''
-        while option != 'x':
+        while option != 'X':
             option = self.handle_option()
         print("Done")
         
@@ -68,6 +68,8 @@ class Association:
             for team in self.teams.teams:
                 self.season.add_team_to_season(team)
             self.season.run()
+        elif choice != "X":
+            print("Please enter a number 1 or 2, or press X to exit.")
         return choice
     
     def read_choice(self):

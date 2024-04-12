@@ -82,9 +82,9 @@ class Teams:
     def add_new_team(self):
         team_name = input("Please enter the name of the team: ").strip()
         while team_name in [team.name for team in self.teams]:
-            team_name = input(f"Team {team_name} already exists! Please enter a new name: ")
+            team_name = input(f"Team {team_name} already exist! Please enter a new name: ")
         print(f"Team {team_name} added!")
-        self.teams.append(Team(team_name, Players([])))
+        self.teams.append(Team(team_name, Players()))
     
     def manage_team(self):
         team_name = input("Please enter the team's name that you want to manage: ").strip()
@@ -99,9 +99,9 @@ class Teams:
         team_names = [team.name for team in self.teams]
         if team_name in team_names:
             self.teams.pop(team_names.index(team_name))
-            print("Team deleted.")
-        else:
             print(f"The team {team_name} has been deleted.")
+        else:
+            print("The team you want to delete does not exist!")
     
     def display_players_by_level(self):
         levels = ["Edge", "Common", "Core", "All Star"]

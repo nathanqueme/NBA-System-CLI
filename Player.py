@@ -14,17 +14,24 @@ class Player:
         self.age = age
         self.team = team
         self.number = number
-        if credit < 1000:
-            self.level = "Edge"
-        elif credit < 1500:
-            self.level = "Common"
-        elif credit < 2000:
-            self.level = "Core"
-        else:
-            self.level = "All Star"
+        self.level = self._get_level(credit)
  
     def get_number(self):
         return self.number
     
     def get_age(self):
         return self.age
+    
+    def update_credit(self, credit):
+        self.credit = credit
+        self.level = self._get_level(credit)
+        
+    def _get_level(self, credit):
+        if credit < 1000.00:
+           return "Edge"
+        elif credit < 1500.00:
+            return "Common"
+        elif credit < 2000.00:
+            return "Core"
+        else:
+            return "All Star"

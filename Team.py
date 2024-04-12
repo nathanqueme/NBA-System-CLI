@@ -57,23 +57,24 @@ class Team:
         number = int(input("Please enter the player's No: ").strip())
         while number in [player.number for player in self.players.get_players()]:
             match = [player for player in self.players.get_players() if player.number == number][0]
-            print(f"This No has been occupied by: {match.name}. Please re-enter the No: {number}")
-            number = int(input("Please enter the player's No: ").strip())
+            number = int(input(f"This No has been occupied by: {match.name}. Please re-enter the No: "))
         self.players.players.append(Player(name, credit, age, self.name, number))
         print(f"Player {name} added!")
 
     def update_player(self):
         original_name = input("Please enter the player's name: ").strip()
-        name = input("Please enter the new name: ").strip()
+        if original_name.lower() not in [player.name.lower() for player in self.players.get_players()]:
+            print("Player does not exist.")
+            return
+        name = input("Please enter the name: ").strip()
         credit = float(input( "Please enter the credit: ").strip())
         age = int(input("Please enter the age: ").strip())
         number = int(input("Please enter the No: ").strip())
         while number in [player.number for player in self.players.get_players()]:
             match = [player for player in self.players.get_players() if player.number == number][0]
-            print(f"This No has been occupied by: {match.name}. Please re-enter the No: {number}")
-            number = int(input("Please enter the player's No: ").strip())
-        if original_name in [player.name for player in self.players.get_players()]:
-            idx = [player.name for player in self.players.get_players()].index(original_name)
+            number = int(input(f"This No has been occupied by: {match.name}. Please re-enter the No: ").strip())
+        if original_name.lower() in [player.name.lower() for player in self.players.get_players()]:
+            idx = [player.name.lower() for player in self.players.get_players()].index(original_name.lower())
             self.players.players.pop(idx)
             self.players.players.append(Player(name, credit, age, self.name, number))
             print("Player information updated.")

@@ -31,9 +31,10 @@ class Game:
             
         diff = abs(first_team_avg - second_team_avg)
         for player in self.teams[winning_team_idx].players.players:
-            player.credit += diff / 5
+            player.update_credit(player.credit + diff / 5)
         for player in self.teams[losing_team_idx].players.players:
-            player.credit -= diff / 5
+            player.update_credit(player.credit - diff / 5)
 
         self.results.append(self.teams[winning_team_idx])
         self.results.append(self.teams[losing_team_idx])
+        
