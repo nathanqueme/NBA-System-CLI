@@ -13,21 +13,27 @@ class Game:
         return len(self.teams) == 2
     
     def play(self):
-        # The team that has a LARGER AVERAGE CREDIT will WIN this game
         first_team = self.teams[0]
         second_team = self.teams[1]
         first_team_avg = first_team.average_credit()
         second_team_avg = second_team.average_credit()
+
+        if first_team_avg > second_team_avg:
+            winning_team_idx = 0
+            losing_team_idx = 1
+        elif first_team_avg < second_team_avg:
+            winning_team_idx = 1
+            losing_team_idx = 0
+        else:
+            # Draw
+            winning_team_idx = 0 if first_team.name < second_team.name else 1
+            losing_team_idx = 1 if winning_team_idx == 0 else 0
+            
         diff = abs(first_team_avg - second_team_avg)
-        
-        wining_team_idx = 0 if first_team_avg > second_team_avg else 1
-        losing_team_idx = 1 if wining_team_idx == 0 else 0
-        
-        for player in self.teams[wining_team_idx].players.players:
+        for player in self.teams[winning_team_idx].players.players:
             player.credit += diff / 5
         for player in self.teams[losing_team_idx].players.players:
             player.credit -= diff / 5
-        
-        self.results.append(self.teams[wining_team_idx])
+
+        self.results.append(self.teams[winning_team_idx])
         self.results.append(self.teams[losing_team_idx])
-    

@@ -87,8 +87,6 @@ class Season:
                 self.curr_team_list.append(game.results[0]) 
             self.round_number += 1
             self.schedule = [] # reset
-        else:
-            print("Not all games are full yet, please add more teams to the round first!")
         
     def display_game_result_records(self):
         Utils.RecordHeader()
@@ -103,35 +101,3 @@ class Season:
     
     def add_team_to_season(self, team: Team):
         self.curr_team_list.append(team)
-    
-# print("The existing teams are as follows:")
-
-# The existing teams are as follows: 
-# Suns Bulls Hawks Nets
-# Please enter the team's name that you want to schedule: 
-# Suns
-# Team Suns has been added at the Game 1 position 1
-
-# The existing teams are as follows: 
-# Bulls Hawks Nets
-# Please enter the team's name that you want to schedule: 
-# Bulls
-# Team Bulls has been added at the Game 1 position 2
-
-# The existing teams are as follows: 
-# Hawks Nets
-# Please enter the team's name that you want to schedule: 
-# Hawks
-# Team Hawks has been added at the Game 2 position 1
-
-# The existing teams are as follows: 
-# Nets
-# Please enter the team's name that you want to schedule: 
-# Heats
-# No such team! Please try again
-
-# The existing teams are as follows: 
-# Nets
-# Please enter the team's name that you want to schedule: 
-# Nets
-# Team Nets has been added at the Game 2 position 2
