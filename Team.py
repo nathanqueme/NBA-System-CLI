@@ -102,3 +102,6 @@ class Team:
             return 0
         return sum(player.age for player in players_arr) / len(players_arr)
     
+    def average_credit(self):
+        players = self.players.get_players()
+        return sum([pl.credit for pl in players]) / len(players)

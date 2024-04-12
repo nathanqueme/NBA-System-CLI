@@ -4,17 +4,11 @@ from Record import Record
 from Utils import Utils
 
 class Season:
-    def __init__(
-        self,
-        schedule: list[Game],
-        curr_team_list: list[Team],
-        round_number: int,
-        records: list[Record]
-    ):
-        self.schedule = schedule
-        self.curr_team_list = curr_team_list
-        self.round_number = round_number
-        self.records = records
+    def __init__(self):
+        self.schedule: list[Game] = []
+        self.curr_team_list: list[Team] = []
+        self.round_number: int = 1
+        self.records: list[Record] = []
 
     def run(self):
         option = ''
@@ -45,14 +39,99 @@ class Season:
         return input("Enter a choice: ")
     
     def add_team_to_round(self):
-        pass
-    
+        while len(self.curr_team_list) > 0:
+            while True: 
+                available_teams = [team.name for team in self.curr_team_list]
+                print("The existing teams are as follows: \n" + " ".join(available_teams))
+                team_name = input("Please enter the team's name that you want to schedule: ").strip()
+
+                # Search
+                matching_team: Team | None = None
+
+                for team in self.curr_team_list:
+                    if team.name == team_name:
+                        matching_team = team
+                        break
+                    
+                if matching_team is None:
+                    print("No such team! Please try again")
+                else:
+                    break
+                
+            if len(self.schedule) == 0 or self.schedule[-1].is_full():
+                self.schedule.append(Game(term=len(self.schedule) + 1))
+
+            self.schedule[-1].add_team(matching_team)
+            self.curr_team_list.pop(self.curr_team_list.index(matching_team))
+            print(f"Team {team_name} has been added at the Game {len(self.schedule)} position {len(self.schedule[-1].teams)}")
+            print(len(self.schedule))
+           
     def display_round(self):
-        pass
+        Utils.GameHeader()
+        for game in self.schedule:
+            first = game.teams[0].name if len(game.teams) > 0 else "N/A"
+            second = game.teams[1].name if len(game.teams) > 1 else "N/A"
+            print(Utils.GamesFormat(first, "vs", second))
+        Utils.GameEnd()
     
     def play_games(self):
-        pass
-    
+        if all([game.is_full() for game in self.schedule]):
+            for game in self.schedule:
+                game.play()
+                self.records.append(Record(
+                    game.results[0].name, 
+                    game.results[1].name, 
+                    len(self.schedule), 
+                    self.round_number
+                ))
+                self.curr_team_list.append(game.results[0]) 
+            self.round_number += 1
+            self.schedule = [] # reset
+        else:
+            print("Not all games are full yet, please add more teams to the round first!")
+        
     def display_game_result_records(self):
-        pass
+        Utils.RecordHeader()
+        for record in self.records:
+            print(Utils.RecordFormat(
+                record.round_number, 
+                record.game_number, 
+                record.win_team, 
+                record.lose_team
+            ))
+        Utils.RecordEnd()
     
+    def add_team_to_season(self, team: Team):
+        self.curr_team_list.append(team)
+    
+# print("The existing teams are as follows:")
+
+# The existing teams are as follows: 
+# Suns Bulls Hawks Nets
+# Please enter the team's name that you want to schedule: 
+# Suns
+# Team Suns has been added at the Game 1 position 1
+
+# The existing teams are as follows: 
+# Bulls Hawks Nets
+# Please enter the team's name that you want to schedule: 
+# Bulls
+# Team Bulls has been added at the Game 1 position 2
+
+# The existing teams are as follows: 
+# Hawks Nets
+# Please enter the team's name that you want to schedule: 
+# Hawks
+# Team Hawks has been added at the Game 2 position 1
+
+# The existing teams are as follows: 
+# Nets
+# Please enter the team's name that you want to schedule: 
+# Heats
+# No such team! Please try again
+
+# The existing teams are as follows: 
+# Nets
+# Please enter the team's name that you want to schedule: 
+# Nets
+# Team Nets has been added at the Game 2 position 2

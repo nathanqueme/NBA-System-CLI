@@ -51,9 +51,8 @@ class Association:
         teams = Teams()
         for team in teams_arr:
             teams.add_team(team)
-        season = Season([], teams, 1, [])
         self.teams: Teams = teams
-        self.season: Season = season
+        self.season: Season = Season()
     
     def run(self):
         option = ''
@@ -66,6 +65,8 @@ class Association:
         if choice == "1":
             self.teams.run()
         elif choice == "2":
+            for team in self.teams.teams:
+                self.season.add_team_to_season(team)
             self.season.run()
         return choice
     
