@@ -6,7 +6,7 @@ This project is a Command Line Interface (CLI) system that simulates NBA-style t
 
 The overall system comprises nine distinct components, as illustrated below:
 
-![System Diagram](SystemClassesDiagram.png)
+![System Diagram](assets/SystemClassesDiagram.png)
 
 These components include:
 1. Association
@@ -23,7 +23,7 @@ These components include:
 
 The game operates on a multi-round structure, where teams progress automatically based on game outcomes. The diagram below outlines the flow of the season logic:
 
-![Season Logic](SeasonLogic.png)
+![Season Logic](assets/SeasonLogic.png)
 
 ## Key Features
 
