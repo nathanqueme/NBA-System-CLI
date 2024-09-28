@@ -1,18 +1,46 @@
-## Files with menus
+# NBA Game System CLI Assignment - HD Grade
 
-Here are the .py files that contain a method called `run()`:
+This project is a Command Line Interface (CLI) system that simulates NBA-style team and season management. By using OOP, I adhered to design specifications and met the strict I/O footprint, earning 35/35.
 
-- `Association.py`
-- `Season.py`
-- `Team.py`
-- `Teams.py`
+## System Design
 
-Welcome to the Teams Page! Please make a selection from the menu:
-1. Display all teams.
-2. Display all players.
-3. Add a new team.
-4. Manage an existing team.
-5. Delete an existing team.
-6. Display all players by an level.
-R. Return to previous menu.
-Enter a choice: 4
+The overall system comprises nine distinct components, as illustrated below:
+
+![System Diagram](SystemClassesDiagram.png)
+
+These components include:
+1. Association
+2. Season
+3. Teams
+4. Team
+5. Players
+6. Player
+7. Game
+8. Record
+9. Utils
+
+## Season Logic
+
+The game operates on a multi-round structure, where teams progress automatically based on game outcomes. The diagram below outlines the flow of the season logic:
+
+![Season Logic](SeasonLogic.png)
+
+## Key Features
+
+The system incorporates several essential features:
+- **Team & Player Management**: Add, update, and remove teams or players seamlessly.
+- **Season Scheduling**: Automatically organize teams into rounds, simulate games, and display results.
+- **Game Simulation**: Simulate games by determining winners based on player statistics and updating team credits accordingly.
+
+## Summary of Applied Concepts
+
+- **Object-Oriented Design**: This project leverages core OOP principles, including encapsulation, inheritance, and polymorphism.
+- **Command-Line Interface (CLI)**: The system is structured as a CLI-based application, replicating NBA operations for a user-friendly experience.
+- **Design Efficiency**: Streamlined game logic for efficient team management and season progression.
+
+## How to run 
+
+Run the main file:
+    ```bash
+    python3 app/Association.py
+    ```
