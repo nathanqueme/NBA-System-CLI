@@ -1,9 +1,14 @@
 
-![NBA Logo](assets/NBA-Logo.png)
+<div align="center">
+  <img src="assets/NBA-Logo.png" alt="NBA Logo" style="width:140px;"/>
+</div>
+
 
 # UTS OOP Assignment: NBA Game System (HD Grade)
 
-This project is a Command Line Interface (CLI) system that simulates NBA-style team and season management. By using OOP, I adhered to the [design specifications](AssignmentSpecifications.pdf) and met the expected [I/O footprint](SampleIO.txt), earning 35/35.
+This project is a Command Line Interface (CLI) system that simulates NBA-style team and season management. 
+
+By using OOP, I adhered to the [design specifications](AssignmentSpecifications.pdf) and met the expected [I/O footprint](SampleIO.txt), earning 35/35.
 
 ## System Design
 
@@ -47,3 +52,4 @@ Run the main file:
     ```bash
     python3 app/Association.py
     ```
+
