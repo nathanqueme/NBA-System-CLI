@@ -3,7 +3,7 @@
 
 # UTS OOP Assignment: NBA Game System (HD Grade)
 
-This project is a Command Line Interface (CLI) system that simulates NBA-style team and season management. By using OOP, I adhered to the design [specifications](AssignmentSpecifications.pdf) and met the strict [I/O footprint](SampleIO.txt), earning 35/35.
+This project is a Command Line Interface (CLI) system that simulates NBA-style team and season management. By using OOP, I adhered to the [design specifications](AssignmentSpecifications.pdf) and met the expected [I/O footprint](SampleIO.txt), earning 35/35.
 
 ## System Design
 
