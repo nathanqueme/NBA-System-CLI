@@ -6,7 +6,7 @@ This project is a Command Line Interface (CLI) system that simulates NBA-style t
 
 The overall system comprises nine distinct components, as illustrated below:
 
-![System Diagram](assets/SystemClassesDiagram.png)
+<img src="assets/SystemClassesDiagram.png" alt="System Diagram" style="max-width: 500px; width: 100%;"/>
 
 These components include:
 1. Association
