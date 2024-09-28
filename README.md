@@ -1,4 +1,4 @@
-# NBA Game System CLI Assignment - HD Grade
+# UTS OOP Assignment: NBA Game System (HD Grade)
 
 This project is a Command Line Interface (CLI) system that simulates NBA-style team and season management. By using OOP, I adhered to design specifications and met the strict I/O footprint, earning 35/35.
 
